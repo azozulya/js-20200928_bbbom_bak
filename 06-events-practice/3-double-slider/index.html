@@ -5,13 +5,16 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div id="root"></div>
+  <div id="root"></div>
+  <script type="module">
+    import DoubleSlider from './index.js';
 
-<script type="module">
-  import DoubleSlider from './index.js';
+    const slider = new DoubleSlider({
+      min: 400,
+      max: 600,
+      formatValue: value => '$' + value,
+    });
 
-  const slider = new DoubleSlider();
-
-  root.append(slider.element);
-</script>
+    root.append(slider.element);
+  </script>
 </body>
