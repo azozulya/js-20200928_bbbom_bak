@@ -1,4 +1,5 @@
 export default class DoubleSlider {
+<<<<<<< HEAD
   element;
   subElements;
   currentThumb;
@@ -143,4 +144,7 @@ export default class DoubleSlider {
     this.element.remove();
     this.removeListeners();
   }
+=======
+
+>>>>>>> parent of 1cac279... FIxed SortableTable-2
 }
